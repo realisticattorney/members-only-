@@ -1,12 +1,9 @@
 module PostsHelper
-
   def post_author_access(posts)
-    result = "#{}"
+    result = ''
     posts.each do |p|
       result << "<tr> <td>#{p.content}</td>"
-      if user_signed_in?
-        result << "<td>#{p.user.username}</td> </tr>"
-      end
+      result << "<td>#{p.user.username}</td> </tr>" if user_signed_in?
     end
     result.html_safe
   end
