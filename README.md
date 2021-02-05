@@ -2,8 +2,6 @@
 
 This is the Ruby On Rails project #4, from the Microverse's main curriculum. It was aimed to build a very simple app that displays posts created by members, but the author of each post is only shown if you're logged in, otherwise the author is anonymous.
 
-
-
 ## Built With
 
 -Ruby on Rails

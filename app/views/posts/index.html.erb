@@ -17,11 +17,6 @@
         <% if user_signed_in? %>
         <td> <%= post.user.username %> </td>
         <% end %>
-           <% if user_signed_in? && post.user.username == current_user.username %>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        <% end %>
-      </tr>
     <% end %>
   </tbody>
 </table>
