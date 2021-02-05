@@ -7,12 +7,11 @@ class PostsController < ApplicationController
     @posts = Post.all
   end
 
-
-
   # GET /posts/new
   def new
     @post = Post.new
   end
+
   # POST /posts or /posts.json
   def create
     # @post = Post.new(post_params)
